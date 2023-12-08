@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfKolpakov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfKolpakov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition />
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Height="auto" HorizontalAlignment="left" VerticalAlignment="center" Orientation="Horizontal">
+            <Image Source="pack://siteoforigin:,,,/Resources/picture.png" />
+            <Label x:Name="title" Style="{StaticResource mainLabel}" Content="Товары" VerticalAlignment="Bottom"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Frame Height="auto" Name="frmMain" NavigationUIVisibility="Hidden"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center">
+            <Label x:Name="city" Style="{StaticResource mainLabel}" Content="Россия, Ярославская область, г.Ярославль" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <Button Grid.Row="0" x:Name="btnBack" Content="Назад" Height="30" Width="50" Style="{StaticResource btnBack}" HorizontalAlignment="Right" Click="btnBack_Click" />
+    </Grid>
+</Window>

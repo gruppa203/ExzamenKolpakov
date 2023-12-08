@@ -1,0 +1,38 @@
+﻿<Page x:Class="WpfKolpakov.Pages.TovaryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfKolpakov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1150"
+      Title="TovaryPage" Background="White">
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="DGridTovary" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="0" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Код" Width="40" Binding="{Binding Kod}"/>
+                <DataGridTextColumn Header="Артикул" Width="75" Binding="{Binding Articul}"/>
+                <DataGridTextColumn Header="Наименование" Width="100" Binding="{Binding Naimenovanie}"/>
+                <DataGridTextColumn Header="Ед.измерения" Width="90" Binding="{Binding Edenitsa_Izmerenia}"/>
+                <DataGridTextColumn Header="Стоимость" Width="70" Binding="{Binding Stoimost}"/>
+                <DataGridTextColumn Header="Размер макс. скидки" Width="125" Binding="{Binding Razmer_Maksimalnoy_Skidki}"/>
+                <DataGridTextColumn Header="Производитель" Width="100" Binding="{Binding Proizvoditel}"/>
+                <DataGridTextColumn Header="Поставщик" Width="75" Binding="{Binding Postavshic}"/>
+                <DataGridTextColumn Header="Категория" Width="70" Binding="{Binding Kategorii_Tovara}"/>
+                <DataGridTextColumn Header="Действуйщая скидка" Width="125" Binding="{Binding Deystv_Skidka}"/>
+                <DataGridTextColumn Header="Кол-во на складе" Width="110" Binding="{Binding Kol-vo_Na_Sklade}"/>
+                <DataGridTextColumn Header="Описание" Width="70" Binding="{Binding Opisanie}"/>
+                <DataGridTextColumn Header="Изображение" Width="90" Binding="{Binding Isobragenie}"/>
+                <DataGridTemplateColumn Width="auto">
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+    </Grid>
+</Page>

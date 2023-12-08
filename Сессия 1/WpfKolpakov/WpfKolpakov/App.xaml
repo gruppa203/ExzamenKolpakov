@@ -1,0 +1,32 @@
+﻿<Application x:Class="WpfKolpakov.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfKolpakov"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="mainLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Foreground" Value="blue"/>
+            <Setter Property="FontFamily" Value="Comic Sans Ms"/>
+        </Style>
+
+
+        <Style x:Key="btnBack" TargetType="Button">
+            <Setter Property="Background" Value="#FF0064F5"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+
+        <Style x:Key="btnTo" TargetType="Button">
+        <Setter Property="Background" Value="#FF0064F5"/>
+        <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+
+
+        <Style x:Key="RoliLabel" TargetType="Label">
+            <Setter Property="Foreground" Value="#FF0064F5"/>
+            <Setter Property="Background" Value="#fff"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Comic Sans Ms"/>
+        </Style>
+    </Application.Resources>
+</Application>

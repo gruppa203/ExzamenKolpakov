@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Bd_KolpakovModelContainer" CdmEntityContainer="Bd_KolpakovEntities">
+    <EntitySetMapping Name="Polzovateli">
+      <EntityTypeMapping TypeName="Bd_KolpakovModel.Polzovateli">
+        <MappingFragment StoreEntitySet="Polzovateli">
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="Familia" ColumnName="Familia" />
+          <ScalarProperty Name="Imya" ColumnName="Imya" />
+          <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Parol" ColumnName="Parol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roli">
+      <EntityTypeMapping TypeName="Bd_KolpakovModel.Roli">
+        <MappingFragment StoreEntitySet="Roli">
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tovary">
+      <EntityTypeMapping TypeName="Bd_KolpakovModel.Tovary">
+        <MappingFragment StoreEntitySet="Tovary">
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="Articul" ColumnName="Articul" />
+          <ScalarProperty Name="Naimenovanie" ColumnName="Naimenovanie" />
+          <ScalarProperty Name="Edenitsa_Izmerenia" ColumnName="Edenitsa_Izmerenia" />
+          <ScalarProperty Name="Stoimost" ColumnName="Stoimost" />
+          <ScalarProperty Name="Razmer_Maksimalnoy_Skidki" ColumnName="Razmer_Maksimalnoy_Skidki" />
+          <ScalarProperty Name="Proizvoditel" ColumnName="Proizvoditel" />
+          <ScalarProperty Name="Postavshic" ColumnName="Postavshic" />
+          <ScalarProperty Name="Kategorii_Tovara" ColumnName="Kategorii_Tovara" />
+          <ScalarProperty Name="Deystv_Skidka" ColumnName="Deystv_Skidka" />
+          <ScalarProperty Name="Kol_vo_Na_Sklade" ColumnName="Kol-vo_Na_Sklade" />
+          <ScalarProperty Name="Opisanie" ColumnName="Opisanie" />
+          <ScalarProperty Name="Isobragenie" ColumnName="Isobragenie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
